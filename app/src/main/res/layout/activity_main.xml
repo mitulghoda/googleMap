@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <AutoCompleteTextView
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/autoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Please enter your place" >
+
+        <requestFocus />
+    </AutoCompleteTextView>
+
+
+
+    <TextView
+        android:id="@+id/current"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+         android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:background="#000000"
+        android:text="Getcurrent"
+        android:layout_width="100dp"
+        android:layout_height="40dp" />
+    <TextView
+        android:id="@+id/multiple"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:background="#000000"
+        android:text="Multiple"
+        android:layout_width="100dp"
+        android:layout_height="40dp" />
+    <fragment
+        android:layout_margin="20dp"
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="390dp"
+        class="com.google.android.gms.maps.MapFragment" />
+</LinearLayout>
